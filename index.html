@@ -1,227 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset=""UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4ca0c1657d.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<div id="header">
-    <div class="container"></div>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/4ca0c1657d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="Images/logo.png" class="logo">
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          <img src="Images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Welcome to my Portfolio!</p>
-            <h1>Hi, I'm <span>Aard,<br></span> from Philippines</h1>
+          <p>Welcome to my Portfolio!</p>
+          <h1>
+            Hi, I'm <span>Aard,<br /></span> from Philippines
+          </h1>
         </div>
+      </div>
     </div>
-</div>
-<!------------------about--------------->
-<div id="about">
-    <div class="container">
+    <!------------------about--------------->
+    <div id="about">
+      <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="Images/Personal Picture.png">
+          <div class="about-col-1">
+            <img src="Images/Personal Picture.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p class="titleinfo">
+              I'm a self-taught programmer with years of various experiences in
+              different fields. I've listed below examples of my achievements
+              and experiences! Please click either Skills, Experience, or
+              Education to view them.
+            </p>
+            <br />
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>
-                    I'm a self-taught programmer with years of various experiences in different fields. 
-                    I've listed below examples of my achievements and experiences! Please take a look.
-                </p>
-
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links" onclick="opentab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>Languages</span><br>C#, JavaScript, HTML, CSS, GDScript</li>
-                        <li><span>Web Development</span><br>Designing Web interfaces</li>
-                        <li><span>Game Development</span><br>Unity and Godot Game Engine</li>
-                        <li><span>Music Production</span><br>Mixing/Mastering Music: FL Studio, Audacity, Live Studio Setup</li>
-                        <li><span>Music Recording</span><br>Vocals, Drums, Guitar, Keyboard, and Bass</li>
-                        <li><span>Digital Media</span><br>Krita, DaVinci Resolve</li>
-                        <li><span>Management</span><br>Leadership, Project Management, Decision-making</li>
-                        <li><span>Communication</span><br>Interpersonal Communication, Conflict Resolution</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2023 - Current</span><br>React Bootcamp</li>
-                        <li><span>2022 - Current</span><br>Game Development</li>
-                        <li><span>2021</span><br>Founder of Performer's Guild Network</li>
-                        <li><span>2019</span><br>Music Teacher at Strums Music School</li>
-                        <li><span>2018</span><br>President of XJTLU Music Studio</li>
-                        <li><span>2017</span><br>Vice-President of XJTLU Music Studio</li>
-                        <li><span>2017</span><br>Band Leader of Rockestra Music Group</li>
-                        <li><span>2015 - Current</span><br>Musician at Bars, Hotels, Restaurants, Concert Venues</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2021</span><br>Computer Engineering at Bohol University</li>
-                        <li><span>2018</span><br>Information Computing Science at Xi'An Jiaotong Liverpool University</li>
-                        <li><span>2015</span><br>Information Management and Systems at Xi'An Jiaotong Liverpool University</li>
-                        <li><span>Highschool</span><br>International British Academy</li>
-                    </ul>
-                </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Languages</span><br />C#, JavaScript, HTML, CSS,
+                  GDScript
+                </li>
+                <li>
+                  <span>Web Development</span><br />Designing Web interfaces
+                </li>
+                <li>
+                  <span>Game Development</span><br />Unity and Godot Game Engine
+                </li>
+                <li>
+                  <span>Music Production</span><br />Mixing/Mastering Music: FL
+                  Studio, Audacity, Live Studio Setup
+                </li>
+                <li>
+                  <span>Music Recording</span><br />Vocals, Drums, Guitar,
+                  Keyboard, and Bass
+                </li>
+                <li><span>Digital Media</span><br />Krita, DaVinci Resolve</li>
+                <li>
+                  <span>Management</span><br />Leadership, Project Management,
+                  Decision-making
+                </li>
+                <li>
+                  <span>Communication</span><br />Interpersonal Communication,
+                  Conflict Resolution
+                </li>
+              </ul>
             </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - Current</span><br />React Bootcamp</li>
+                <li><span>2022 - Current</span><br />Game Development</li>
+                <li>
+                  <span>2021</span><br />Founder of Performer's Guild Network
+                </li>
+                <li>
+                  <span>2019</span><br />Music Teacher at Strums Music School
+                </li>
+                <li><span>2018</span><br />President of XJTLU Music Studio</li>
+                <li>
+                  <span>2017</span><br />Vice-President of XJTLU Music Studio
+                </li>
+                <li>
+                  <span>2017</span><br />Band Leader of Rockestra Music Group
+                </li>
+                <li>
+                  <span>2015 - Current</span><br />Musician at Bars, Hotels,
+                  Restaurants, Concert Venues
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021</span><br />Computer Engineering at Bohol
+                  University
+                </li>
+                <li>
+                  <span>2018</span><br />Information Computing Science at Xi'An
+                  Jiaotong Liverpool University
+                </li>
+                <li>
+                  <span>2015</span><br />Information Management and Systems at
+                  Xi'An Jiaotong Liverpool University
+                </li>
+                <li>
+                  <span>Highschool</span><br />International British Academy
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!---------services------------->
-<div id="services">
-    <div class="container">
+    <!---------services------------->
+    <div id="services">
+      <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design</h2>
-                <p>I can design website templates for you or a full-on custom website of your choice.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-music"></i>
-                <h2>Music Production</h2>
-                <p>I can record, mix, and master tracks for you.</p>
-                <a href="#">Learn more</a>
-            </div>
-            <div>
-                <i class="fa-solid fa-gamepad"></i>
-                <h2>Game Design</h2>
-                <p>I can work on both front-end and back-end of game design.</p>
-                <a href="#">Learn more</a>
-            </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I can design website templates for you or a full-on custom website
+              of your choice.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-music"></i>
+            <h2>Music Production</h2>
+            <p>I can record, mix, and master tracks for you.</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-gamepad"></i>
+            <h2>Game Design</h2>
+            <p>I can work on both front-end and back-end of game design.</p>
+            <a href="#">Learn more</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!----------portfolio---------->
-<div id="portfolio">
-    <div class="container">
+    <!----------portfolio---------->
+    <div id="portfolio">
+      <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
-            <div class="work">
-                <img src="Images/work1.jpg">
-                <div class="layer">
-                    <h3>Game Design</h3>
-                    <p>Here is a documentation of the game that I am currently working on! NOTE: File contains spoilers!</p>
-                    <a href="https://docs.google.com/document/d/1MT-RrfwCKK9Kkyb2kvDhHOnzOrBlCV39sLgakA6thCA/edit?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          <div class="work">
+            <img src="Images/work1.jpg" />
+            <div class="layer">
+              <h3>Game Design</h3>
+              <p>
+                Here is a documentation of the game that I am currently working
+                on! NOTE: File contains spoilers!
+              </p>
+              <a
+                href="https://docs.google.com/document/d/1MT-RrfwCKK9Kkyb2kvDhHOnzOrBlCV39sLgakA6thCA/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="Images/work2.jpg">
-                <div class="layer">
-                    <h3>Web Design</h3>
-                    <p>An interactive web-map of XJTLU using Google Maps API.</p>
-                    <a href="https://youtu.be/gn4CQz3leZw" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="Images/work2.jpg" />
+            <div class="layer">
+              <h3>Web Design</h3>
+              <p>An interactive web-map of XJTLU using Google Maps API.</p>
+              <a
+                href="https://youtu.be/gn4CQz3leZw"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
-            <div class="work">
-                <img src="Images/work3.jpg">
-                <div class="layer">
-                    <h3>Music Production</h3>
-                    <p>Here are some samples of my music!</p>
-                    <a href="https://www.youtube.com/channel/UCkO3r9rcw6NxQR-cSWelJHw" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
-                </div>
+          </div>
+          <div class="work">
+            <img src="Images/work3.jpg" />
+            <div class="layer">
+              <h3>Music Production</h3>
+              <p>Here are some samples of my music!</p>
+              <a
+                href="https://www.youtube.com/channel/UCkO3r9rcw6NxQR-cSWelJHw"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
+          </div>
         </div>
-        <a href="https://www.facebook.com/PigeonsPGN" target="_blank" rel="noopener noreferrer" class="btn">My Music Agency: Performer's Guild Network Page</a>
+      </div>
     </div>
-</div>
-<!----------contact-------->
-<div id="contact">
-    <div class="container">
+
+    <br /><br /><br /><br /><br />
+
+    <!----------PGN------------>
+    <div id="pgn">
+      <div class="container">
         <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-paper-plane"></i>matiaskyle@yahoo.com</p>
-                <p><i class="fa-solid fa-phone"></i>+639672613642</p>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/AardPGN/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://discord.gg/WdTP6g5hXr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-discord"></i></a>
-                    <a href="https://www.youtube.com/channel/UCkO3r9rcw6NxQR-cSWelJHw" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+          <div class="about-col-1">
+            <img src="Images/pgn_2023_logo.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">Performer's Guild Network</h1>
+            <p class="titleinfo">
+              <br />
+              PGN is an online music agency that I founded. We provide a
+              platform for online and offline musicians to come and promote
+              their music. We perform in various types of events whether it be
+              online or IRL. Our musicians are mostly based in Philippines but
+              we have several international singers as well. Please click below
+              for our current staff, performer, and member list!
+              <br />
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('staff')">
+                Staff
+              </p>
+              <p class="tab-links" onclick="opentab('performers')">
+                Performers
+              </p>
+              <p class="tab-links" onclick="opentab('members')">Members</p>
+            </div>
+            <div class="tab-contents active-tab" id="staff">
+              <ul>
+                <div class="column">
+                  <li><span>Aard</span><br />CEO - Chief Executive Officer</li>
+                  <li>
+                    <span>Nao-ish</span><br />CMO - Chief Marketing Officer
+                  </li>
+                  <li><span>Sey</span><br />COO - Chief Operations Officer</li>
+                  <li><span>Rika</span><br />CFO - Chief Financial Officer</li>
+                  <li><span>Remi</span><br />CTO - Chief Technical Officer</li>
+                  <li>
+                    <span>Ziri</span><br />Executive Manager of Media and
+                    Marketing
+                  </li>
                 </div>
-                <a href="Assets/Elijah_Kyle_D._Matias_-_Software_Developer.pdf download class="btn btn2">Download CV</a>
+                <div class="column">
+                  <li><span>Rafd</span><br />Executive Assistant</li>
+                  <li><span>Pine</span><br />Executive Assistant</li>
+                  <li><span>Style</span><br />Executive Assistant</li>
+                  <li><span>Dylan</span><br />Executive Assistant</li>
+                  <li><span>Lou</span><br />Marketing Manager</li>
+                </div>
+                <div class="column">
+                  <li><span>Go</span><br />Social Media Assistant | Editor</li>
+                  <li>
+                    <span>Franc</span><br />Social Media Assistant | Editor
+                  </li>
+                  <li>
+                    <span>Clover</span><br />Social Media Assistant |
+                    Illustrator
+                  </li>
+                </div>
+              </ul>
             </div>
-            <div class="contact-right">
-                <form name="submit-to-google-sheet">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-                <span id="msg"></span>
+            <div class="tab-contents" id="performers">
+              <ul>
+                <div class="column">
+                  <li><span>Batch 1</span><br />Aard</li>
+                  <li>Sey</li>
+                  <li>Remi</li>
+                  <li>Nao</li>
+                  <li>Shakeys</li>
+                  <li>Alapaap</li>
+                  <li>Go</li>
+                  <li>King</li>
+                  <li>Franc</li>
+                  <li>Eichi</li>
+                </div>
+                <div class="column">
+                  <li><span>Batch 2</span><br />Jovit</li>
+                  <li>Lola Gucci</li>
+                  <li>Scruffington</li>
+                  <li>Style</li>
+                  <li>Noah</li>
+                  <li>RiceKanin</li>
+                </div>
+                <div class="column">
+                  <li><span>Batch 3</span><br />Wolfy</li>
+                  <li><Soyang</li>
+                  <li>Shiroe</li>
+                  <li>Trizh</li>
+                  <li>Cluster</li>
+                  <li>Czeich</li>
+                  <li>Avec</li>
+                  <li>Origin</li>
+                </div>
+                <div class="column">
+                  <li><span>Batch 4</span><br />Zack</li>
+                  <li>Vaughn</li>
+                  <li>Mark</li>
+                  <li>Outhale</li>
+                  <li>Dane</li>
+                  <li>Reli</li>
+                </div>
+              </ul>
             </div>
+            <div class="tab-contents" id="members">
+              <ul>
+                <li><span>Ziri</span><br />Host</li>
+                <li><span>Rafd</span><br />Host</li>
+                <li><span>Pine</span><br />Host</li>
+                <li><span>Koshka</span><br />Digital Artist</li>
+                <li><span>Clover</span><br />Digital Artist</li>
+                <li><span>Riv</span><br />Producer</li>
+                <li><span>Cluster</span><br />Producer</li>
+                <li><span>Aard</span><br />Producer</li>
+                <li><span>Go</span><br />Video Editor</li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="copyright">
+    <a
+      href="https://www.facebook.com/PigeonsPGN"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn"
+      >Performer's Guild Network Page</a
+    >
+
+    <div class="gallerycontainer">
+      <h1 class="sub-title">PGN Gallery</h1>
+      <br /><br />
+      <div class="photo-gallery">
+        <div class="gallerycolumn">
+          <div class="photo">
+            <img src="/Images/PGN Events/10_firstservertour.png" />
+          </div>
+          <div class="photo">
+            <img src="/Images/PGN Events/5_secondservertour.png" />
+          </div>
+          <div class="photo">
+            <img src="/Images/PGN Events/9_thirdservertour.png" />
+          </div>
+          <div class="photo">
+            <img src="/Images/PGN Events/1_firstannivservertour.png" />
+          </div>
+          <div class="photo">
+            <img src="/Images/PGN Events/7_concertforacauserika.png" />
+          </div>
+          <div class="photo">
+            <img src="/Images/PGN Events/6_concertforacause.jpg" />
+          </div>
+        </div>
+        <div class="gallerycolumn">
+          <div class="photo">
+            <img src="/Images/PGN Events/2_secondannivservertour.jpg" />
+          </div>
+        </div>
+        <div class="gallerycolumn">
+          <div class="photo">
+            <img src="/Images/PGN Events/12_odetteconcert.png" />
+          </div>
+          <div class="photo">
+            <img src="/Images/PGN Events/3_valentinesgig.png" />
+          </div>
+          <div class="photo">
+            <img src="/Images/PGN Events/4_aardnaosessions.png" />
+          </div>
+          <div class="photo">
+            <img src="/Images/PGN Events/8_noahalejandre.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <!----------contact-------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>matiaskyle@yahoo.com</p>
+            <p><i class="fa-solid fa-phone"></i>+639672613642</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/AardPGN/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://discord.gg/WdTP6g5hXr"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCkO3r9rcw6NxQR-cSWelJHw"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+            <a
+              href="Assets/Elijah_Kyle_D._Matias_-_Software_Developer.pdf download"
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
         <p>Copyright @ Aard. Trademark Protected by Performers Guild Network</p>
+      </div>
     </div>
-</div>
 
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-
-<script>
-
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
         }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
-    }
-</script>
+      }
+    </script>
 
-<script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
 
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu(){
+      function openmenu() {
         sidemenu.style.right = "0";
-    }
-    function closemenu(){
+      }
+      function closemenu() {
         sidemenu.style.right = "-200px";
-    }
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwXKycJiTDeIKRuG_tG5ldIgws3ZAe2G81fcACyahw4xl1OzX0Xl1QyepqEl40hHMvaCw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
 
-</script>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwXKycJiTDeIKRuG_tG5ldIgws3ZAe2G81fcACyahw4xl1OzX0Xl1QyepqEl40hHMvaCw/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully!"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
-</body>
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
