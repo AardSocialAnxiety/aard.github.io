@@ -20,6 +20,7 @@
             <li><a href="#header">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
+            <li><a href="#my-projects">Projects</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
             <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
@@ -109,6 +110,10 @@
                   <span>2017</span><br />Band Leader of Rockestra Music Group
                 </li>
                 <li>
+                  <span>2016</span><br />Started my coding journey: HTML, CSS,
+                  JavaScript, C#, etc
+                </li>
+                <li>
                   <span>2015 - Current</span><br />Musician at Bars, Hotels,
                   Restaurants, Concert Venues
                 </li>
@@ -164,6 +169,16 @@
             <a href="#">Learn more</a>
           </div>
         </div>
+      </div>
+    </div>
+    <!----------My Projects---------->
+    <div id="my-projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <p class="titleinfo">
+          Check out my projects and see what I've been working on!
+        </p>
+        <a href="/myprojects.html" class="project-link">View Projects</a>
       </div>
     </div>
     <!----------portfolio---------->
@@ -326,15 +341,21 @@
             </div>
             <div class="tab-contents" id="members">
               <ul>
-                <li><span>Ziri</span><br />Host</li>
-                <li><span>Rafd</span><br />Host</li>
-                <li><span>Pine</span><br />Host</li>
-                <li><span>Koshka</span><br />Digital Artist</li>
-                <li><span>Clover</span><br />Digital Artist</li>
-                <li><span>Riv</span><br />Producer</li>
-                <li><span>Cluster</span><br />Producer</li>
-                <li><span>Aard</span><br />Producer</li>
-                <li><span>Go</span><br />Video Editor</li>
+                <div class="column">
+                  <li><span>Ziri</span><br />Host</li>
+                  <li><span>Rafd</span><br />Host</li>
+                  <li><span>Pine</span><br />Host</li>
+                </div>
+                <div class="column">
+                  <li><span>Koshka</span><br />Digital Artist</li>
+                  <li><span>Clover</span><br />Digital Artist</li>
+                  <li><span>Go</span><br />Video Editor</li>
+                </div>
+                <div class="column">
+                  <li><span>Riv</span><br />Producer</li>
+                  <li><span>Cluster</span><br />Producer</li>
+                  <li><span>Aard</span><br />Producer</li>
+                </div>
               </ul>
             </div>
           </div>
@@ -351,49 +372,92 @@
 
     <div class="gallerycontainer">
       <h1 class="sub-title">PGN Gallery</h1>
-      <br /><br />
+      <br />
+      <p class="titleinfo">
+        <br />
+        This section is a gallery of previous PGN Events throughout its
+        lifetime!
+        <br />
+        <br />
+        <br />
+      </p>
       <div class="photo-gallery">
-        <div class="gallerycolumn">
-          <div class="photo">
-            <img src="/Images/PGN Events/10_firstservertour.png" />
-          </div>
-          <div class="photo">
-            <img src="/Images/PGN Events/5_secondservertour.png" />
-          </div>
-          <div class="photo">
-            <img src="/Images/PGN Events/9_thirdservertour.png" />
-          </div>
-          <div class="photo">
-            <img src="/Images/PGN Events/1_firstannivservertour.png" />
-          </div>
-          <div class="photo">
-            <img src="/Images/PGN Events/7_concertforacauserika.png" />
-          </div>
-          <div class="photo">
-            <img src="/Images/PGN Events/6_concertforacause.jpg" />
-          </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/10_firstservertour.png" />
         </div>
-        <div class="gallerycolumn">
-          <div class="photo">
-            <img src="/Images/PGN Events/2_secondannivservertour.jpg" />
-          </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/5_secondservertour.png" />
         </div>
-        <div class="gallerycolumn">
-          <div class="photo">
-            <img src="/Images/PGN Events/12_odetteconcert.png" />
-          </div>
-          <div class="photo">
-            <img src="/Images/PGN Events/3_valentinesgig.png" />
-          </div>
-          <div class="photo">
-            <img src="/Images/PGN Events/4_aardnaosessions.png" />
-          </div>
-          <div class="photo">
-            <img src="/Images/PGN Events/8_noahalejandre.jpg" />
-          </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/9_thirdservertour.png" />
+        </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/1_firstannivservertour.png" />
+        </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/7_concertforacauserika.png" />
+        </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/6_concertforacause.jpg" />
+        </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/2_secondannivservertour.jpg" />
+        </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/12_odetteconcert.png" />
+        </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/3_valentinesgig.png" />
+        </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/4_aardnaosessions.png" />
+        </div>
+        <div class="photo">
+          <img src="/Images/PGN Events/8_noahalejandre.jpg" />
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div id="gallerymodal" class="modal" onclick="closeModal()">
+      <img class="modal-content" id="modalImage" />
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+      // JavaScript functions
+      function openModal(imgElement) {
+        var modal = document.getElementById("gallerymodal");
+        var modalImg = document.getElementById("modalImage");
+
+        modal.style.display = "block";
+        modal.classList.add("slideIn");
+        modalImg.src = imgElement.src;
+
+        modal.addEventListener("click", function (event) {
+          if (event.target === modal) {
+            closeModal();
+          }
+        });
+      }
+
+      function closeModal() {
+        var modal = document.getElementById("gallerymodal");
+        modal.classList.remove("slideIn");
+
+        setTimeout(function () {
+          modal.style.display = "none";
+        }, 300);
+      }
+
+      // Add event listeners to photos
+      var photos = document.querySelectorAll(".photo img");
+      photos.forEach(function (photo) {
+        photo.addEventListener("click", function () {
+          openModal(photo);
+        });
+      });
+    </script>
     <br /><br /><br /><br /><br />
     <!----------contact-------->
     <div id="contact">
