@@ -382,39 +382,29 @@
         <br />
       </p>
       <div class="photo-gallery">
-        <div class="photo">
-          <img src="/Images/PGN Events/10_firstservertour.png" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/5_secondservertour.png" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/9_thirdservertour.png" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/1_firstannivservertour.png" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/7_concertforacauserika.png" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/6_concertforacause.jpg" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/2_secondannivservertour.jpg" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/12_odetteconcert.png" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/3_valentinesgig.png" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/4_aardnaosessions.png" />
-        </div>
-        <div class="photo">
-          <img src="/Images/PGN Events/8_noahalejandre.jpg" />
-        </div>
+        <script>
+          var photos = [
+            "10_firstservertour.png",
+            "5_secondservertour.png",
+            "9_thirdservertour.png",
+            "1_firstannivservertour.png",
+            "7_concertforacauserika.png",
+            "6_concertforacause.jpg",
+            "2_secondannivservertour.jpg",
+            "12_odetteconcert.png",
+            "3_valentinesgig.png",
+            "4_aardnaosessions.png",
+            "8_noahalejandre.jpg",
+          ];
+
+          for (var i = 0; i < photos.length; i++) {
+            document.write('<div class="photo">');
+            document.write(
+              '<img src="/Images/PGN Events/' + photos[i] + '" />'
+            );
+            document.write("</div>");
+          }
+        </script>
       </div>
     </div>
 
